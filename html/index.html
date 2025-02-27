@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')  }}">
+    
+    <title>App</title>
+</head>
+
+<body>
+    <a href="/login">Login</a>
+    <form action="/" method="post">
+
+        <div class="main">
+            <h3>Форма заполнения: </h3><br/>
+
+            <p>
+            
+            <input type="text" name="name" maxlength="25" placeholder="Иван"><br>
+            <input type="text" name="famil" maxlength="30" placeholder="Иванов">
+            
+            </p>
+            <p>
+
+            <input type="email" name="email" maxlength="25" placeholder="xxxxxx@mail.ru"><br>
+            <input type="tel" name="phone" maxlength="30" placeholder="+79999999999">
+
+            </p>
+            <button type="submit">Submit</button>
+            <p><span class="small">Text</span></p>
+            <a href="/about">text.</a>
+
+        </div>
+
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')  }}">
+        <title>Login</title>
+    </head>
+    <body>
+        <a href="/">Вернутся назад..</a>
+        <form action="/login" method="post">
+
+            <div class="main">
+                <h3>Введите данные: </h3><br/>
+    
+                <p>
+                
+                    <input type="text" name="login" maxlength="25" placeholder="login..."><br>
+                    <input type="password" name="pass" maxlength="30" placeholder="password...">
+                
+                </p>
+                <button type="submit">Submit</button>
+    
+    
+            </div>
+    
+        </form>
+        
+    </body>
+</html>
